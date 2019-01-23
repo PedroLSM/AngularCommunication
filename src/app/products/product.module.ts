@@ -9,6 +9,7 @@ import { ProductEditComponent } from './edit/product-edit.component';
 
 import { ProductService } from './product.service';
 import { ProductEditGuard } from './edit/product-edit-guard.service';
+import { ProductParameterService } from './product-parameter.service';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { ProductEditGuard } from './edit/product-edit-guard.service';
   ],
   providers: [
     ProductService,
+    ProductParameterService,
     ProductEditGuard
   ]
 })
